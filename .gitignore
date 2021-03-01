@@ -13,8 +13,7 @@ npm-debug.log
 yarn-error.log
 
 ### Custom ###
-.idea/
-.idea/**
+/.idea
 
 ### macOS ###
 # General
