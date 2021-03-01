@@ -8,10 +8,13 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 @auth
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Status des robots</a>
+                        <a class="nav-link" href="{{ route('robot.index') }}">Status des robots</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Passer une commande</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Administration</a>
                     </li>
                 @else
                     <li class="nav-item">
@@ -27,7 +30,21 @@
             </ul>
             <form class="d-flex">
                 @auth
-                    <a href="{{ route('profile') }}" class="btn btn-outline-success" type="button">Profil</a>
+                    <div class="dropdown">
+                        <button class="btn btn-success dropdown-toggle" type="button" id="profil-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            Profil
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profil-dropdown">
+                            <li><a class="dropdown-item" href="#">Tableau de bord</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li>
+                                <form method="POST" action="{{ route('logout') }}">
+                                    @csrf
+                                    <button class="dropdown-item" type="submit">Deco</button>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
                 @else
                     <a href="{{ route('login') }}" class="btn btn-outline-success" type="button">Se connecter</a>
                 @endauth

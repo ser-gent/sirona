@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\RobotController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,4 +22,5 @@ Route::middleware('auth')->group(function () {
     Route::get('profile', function () {
         return view('user.profile');
     })->name('profile');
+    Route::resource('robot', RobotController::class);
 });
