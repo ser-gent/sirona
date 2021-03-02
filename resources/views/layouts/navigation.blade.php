@@ -28,7 +28,7 @@
                     </li>
                 @endauth
             </ul>
-            <form class="d-flex">
+            <div class="d-flex">
                 @auth
                     <div class="dropdown">
                         <button class="btn btn-success dropdown-toggle" type="button" id="profil-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
@@ -38,9 +38,10 @@
                             <li><a class="dropdown-item" href="#">Tableau de bord</a></li>
                             <li><hr class="dropdown-divider"></li>
                             <li>
-                                <form method="POST" action="{{ route('logout') }}">
+                                <a href="{{ route('logout') }}" class="dropdown-item" onclick="event.preventDefault();
+                                document.getElementById('logout-form').submit();">Logout</a>
+                                <form action="{{ route('logout') }}" method="POST" id="logout-form">
                                     @csrf
-                                    <button class="dropdown-item" type="submit">Deco</button>
                                 </form>
                             </li>
                         </ul>
@@ -48,7 +49,7 @@
                 @else
                     <a href="{{ route('login') }}" class="btn btn-outline-success" type="button">Se connecter</a>
                 @endauth
-            </form>
+            </div>
         </div>
     </div>
 </nav>
