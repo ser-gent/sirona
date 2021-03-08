@@ -12,6 +12,7 @@
 <body>
     @include('layouts.navigation')
     <div class="container mt-4">
+        @include('layouts.flash')
         @yield('content')
     </div>
     @include('layouts.footer')

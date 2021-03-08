@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ProductController;
 use App\Http\Controllers\RobotController;
 use Illuminate\Support\Facades\Route;
 
@@ -23,4 +24,5 @@ Route::middleware('auth')->group(function () {
         return view('user.profile');
     })->name('profile');
     Route::resource('robot', RobotController::class);
+    Route::resource('product', ProductController::class);
 });

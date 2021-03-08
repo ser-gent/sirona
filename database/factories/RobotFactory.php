@@ -22,7 +22,7 @@ class RobotFactory extends Factory
     public function definition()
     {
         return [
-            'robot_code' => $this->faker->randomDigitNotNull,
+            'robot_code' => $this->faker->unique()->randomDigitNotNull,
             'statut_code' => $this->faker->numberBetween($min = 0, $max = 4),
             'battery_level' => $this->faker->numberBetween($min = 0, $max = 100),
             'nb_km' => $this->faker->numberBetween($min = 0, $max = 1000),
