@@ -1,0 +1,16 @@
+version: 2
+updates:
+  - package-ecosystem: php
+    directory: /
+    schedule :
+      inteval: weekly
+      day: "monday"
+      time: "08:00"
+    commit-message:
+      prefix: "[dep] : "
+    labels:
+      - "Dependencies"
+    assignees:
+      - "ser-gent"
+
+
