@@ -25,4 +25,5 @@ Route::middleware('auth')->group(function () {
     })->name('profile');
     Route::resource('robot', RobotController::class);
     Route::resource('product', ProductController::class);
+    Route::get('admin', [AdminController::class, 'adminPage'])->name('admin');
 });

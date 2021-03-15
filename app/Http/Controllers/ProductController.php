@@ -12,9 +12,9 @@ class ProductController extends Controller
 
     public function index()
     {
-        $products = Product::all()
-            ->sortBy('name')
-            ->where('stock', '>', '0');
+        $products = Product::where('stock', '>', '0')
+            ->orderBy('name')
+            ->paginate(10);
         return view('products.index', compact('products'));
     }
 

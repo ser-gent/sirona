@@ -13,8 +13,14 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Passer une commande</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Administration</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Administration
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="{{ route('product.index') }}">Produits</a></li>
+                            <li><a class="dropdown-item" href="#">Points de ceuillette</a></li>
+                        </ul>
                     </li>
                 @else
                     <li class="nav-item">
