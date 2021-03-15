@@ -3,7 +3,7 @@ updates:
   - package-ecosystem: composer
     directory: /
     schedule :
-      inteval: weekly
+      interval: weekly
       day: "monday"
       time: "08:00"
     commit-message:
