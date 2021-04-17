@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DeliveryPointController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\RobotController;
 use Illuminate\Support\Facades\Route;
@@ -25,5 +26,5 @@ Route::middleware('auth')->group(function () {
     })->name('profile');
     Route::resource('robot', RobotController::class);
     Route::resource('product', ProductController::class);
-    Route::get('admin', [AdminController::class, 'adminPage'])->name('admin');
+    Route::resource('delivery', DeliveryPointController::class);
 });

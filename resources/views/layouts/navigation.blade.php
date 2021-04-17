@@ -19,7 +19,7 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="{{ route('product.index') }}">Produits</a></li>
-                            <li><a class="dropdown-item" href="#">Points de ceuillette</a></li>
+                            <li><a class="dropdown-item" href="{{ route('delivery.index') }}">Points de ceuillette</a></li>
                         </ul>
                     </li>
                 @else
