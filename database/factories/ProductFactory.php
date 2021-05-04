@@ -29,6 +29,7 @@ class ProductFactory extends Factory
             'height' => $this->faker->randomFloat($nbMaxDecimals = 2, $min = 0.15, $max = 20.00),
             'weight' => $this->faker->randomFloat($nbMaxDecimals = 2, $min = 0.15, $max = 20.00),
             'stock' => $this->faker->numberBetween($min = 0, $max = 5400),
+            'location' => $this->faker->numberBetween($min = 1, $max = 5),
         ];
     }
 }

@@ -22,6 +22,11 @@ class CreateProductsTable extends Migration
             $table->float('weight');
             $table->integer('stock');
             $table->timestamps();
+
+            $table->unsignedBigInteger('location');
+            $table->foreign('location')
+                ->references('id')
+                ->on('delivery_points');
         });
     }
 

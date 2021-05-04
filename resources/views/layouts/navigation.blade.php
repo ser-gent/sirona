@@ -10,18 +10,25 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('robot.index') }}">Status des robots</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Passer une commande</a>
-                    </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Administration
+                        <a class="nav-link dropdown-toggle" href="#" id="commandDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Commande
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="{{ route('product.index') }}">Produits</a></li>
-                            <li><a class="dropdown-item" href="{{ route('delivery.index') }}">Points de ceuillette</a></li>
+                        <ul class="dropdown-menu" aria-labelledby="commandDropdown">
+                            <li><a href="{{ route('order.create') }}" class="dropdown-item">Passer commande</a></li>
+                            <li><a href="{{ route('order.index') }}" class="dropdown-item">Mon historique</a></li>
                         </ul>
                     </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="adminDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Administration
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="adminDropdown">
+                            <li><a class="dropdown-item" href="{{ route('product.index') }}">Produits</a></li>
+                            <li><a class="dropdown-item" href="{{ route('delivery.index') }}">Points de livraison</a></li>
+                        </ul>
+                    </li>
+
                 @else
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="{{ route('home') }}">Accueil</a>
@@ -36,6 +43,7 @@
             </ul>
             <div class="d-flex">
                 @auth
+                    <a href="{{ route('order.create') }}" class="btn btn-success me-2">Passer commande</a>
                     <div class="dropdown">
                         <button class="btn btn-success dropdown-toggle" type="button" id="profil-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
                             Profil

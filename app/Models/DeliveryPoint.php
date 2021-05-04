@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 /**
  * @method static paginate(int $int)
@@ -22,4 +23,9 @@ class DeliveryPoint extends Model
         'floor',
         'have_charging_station',
     ];
+
+    public function prodcuts(): BelongsTo
+    {
+        return $this->belongsTo(Product::class);
+    }
 }

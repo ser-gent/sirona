@@ -1,8 +1,10 @@
 <?php
 
+use App\Http\Controllers\OrderController;
 use App\Http\Controllers\DeliveryPointController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\RobotController;
+use App\Models\Order;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -31,4 +33,5 @@ Route::middleware('auth')->group(function () {
     Route::resource('robot', RobotController::class);
     Route::resource('product', ProductController::class);
     Route::resource('delivery', DeliveryPointController::class);
+    Route::resource('order', OrderController::class);
 });

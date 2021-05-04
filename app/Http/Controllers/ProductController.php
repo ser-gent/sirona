@@ -14,7 +14,7 @@ class ProductController extends Controller
     {
         $products = Product::where('stock', '>', '0')
             ->orderBy('name')
-            ->paginate(10);
+            ->paginate(20);
         return view('products.index', compact('products'));
     }
 
