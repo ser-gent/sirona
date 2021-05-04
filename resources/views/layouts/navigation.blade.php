@@ -16,7 +16,7 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="commandDropdown">
                             <li><a href="{{ route('order.create') }}" class="dropdown-item">Passer commande</a></li>
-                            <li><a href="{{ route('order.index') }}" class="dropdown-item">Mon historique</a></li>
+                            <li><a href="{{ route('order.index') }}" class="dropdown-item">Historique</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -53,7 +53,7 @@
                             <li><hr class="dropdown-divider"></li>
                             <li>
                                 <a href="{{ route('logout') }}" class="dropdown-item" onclick="event.preventDefault();
-                                document.getElementById('logout-form').submit();">Logout</a>
+                                document.getElementById('logout-form').submit();">Déconnexion</a>
                                 <form action="{{ route('logout') }}" method="POST" id="logout-form">
                                     @csrf
                                 </form>
