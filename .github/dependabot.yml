@@ -8,6 +8,7 @@ updates:
       time: "08:00"
     commit-message:
       prefix: "[dep] : "
+    target-branch: "dev"
     labels:
       - "Dependencies"
     assignees:
