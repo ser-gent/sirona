@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <h1 class="d-inline">Points de livraison disponibles</h1><a href="{{ route('delivery.create') }}" class="d-inline ms-4 btn btn-primary">Ajouter</a>
+    <h1 class="d-inline">Points de livraison disponibles</h1>
     <hr>
     <table class="table table-striped table-hover">
         <thead>
