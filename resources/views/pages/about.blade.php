@@ -57,7 +57,7 @@
                     Pour vous connecter au service :
                     <ol>
                         <li>Rendez-vous sur la <a href="{{ route('login') }}">page de connexion</a></li>
-                        <li>Rentrez votre code hospitalier qui vous </li>
+                        <li>Rentrez votre code hospitalier</li>
                         <li>Rentrez votre mot de passe associé</li>
                         <li>Voilà vous êtes connecté(e)</li>
                     </ol>
