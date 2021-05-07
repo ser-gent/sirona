@@ -26,6 +26,11 @@ Route::get('/about', function () {
     return view('pages.about');
 })->name('about');
 
+Route::get('/contact', function () {
+    return view('pages.contact');
+})->name('contact');
+
+
 Route::middleware('auth')->group(function () {
     Route::get('profile', function () {
         return view('user.profile');

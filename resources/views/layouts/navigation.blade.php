@@ -37,7 +37,7 @@
                         <a class="nav-link" href="{{ route('about') }}">Explications</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="{{ route('contact') }}">Contact</a>
                     </li>
                 @endauth
             </ul>
@@ -49,7 +49,6 @@
                             Profil
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profil-dropdown">
-                            <li><a class="dropdown-item" href="#">Tableau de bord</a></li>
                             <li><hr class="dropdown-divider"></li>
                             <li>
                                 <a href="{{ route('logout') }}" class="dropdown-item" onclick="event.preventDefault();
