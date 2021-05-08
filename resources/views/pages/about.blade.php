@@ -12,7 +12,7 @@
             </h2>
             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionAbout">
                 <div class="accordion-body">
-                    Sirona est un système d'AGV (Automatic Guided Vehicle) acheminant du matériel et des médicaments entre les différents départements d'un complexe hospitalié.
+                    Sirona est un système d'AGV (Automatic Guided Vehicle) acheminant du matériel et des médicaments entre les différents départements d'un complexe hospitalier.
                 </div>
             </div>
         </div>
@@ -25,7 +25,7 @@
             </h2>
             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionAbout">
                 <div class="accordion-body">
-                    Cette plateforme est un <i>proof of concept</i> d'un système permettant de gérer de la flotte de robot du système Sirona.
+                    Cette plateforme est un <i>proof of concept</i> d'un système permettant de gérer la flotte de robot du système Sirona.
                     Cette application web permet de commander des produits/matériels présents dans le stock de l'hopital et de réaliser l'acheminement dans un temps record vers le département concerné.
                 </div>
             </div>

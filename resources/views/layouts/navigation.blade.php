@@ -8,7 +8,7 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 @auth
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('robot.index') }}">Status des robots</a>
+                        <a class="nav-link" href="{{ route('robot.index') }}">Statut des robots</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="commandDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
