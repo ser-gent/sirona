@@ -70,7 +70,7 @@ class OrderController extends Controller
         $departure = DeliveryPoint::findOrFail($order->departure);
         $arrival = DeliveryPoint::findOrFail($order->arrival);
         $receiver = User::findOrFail($order->receiver);
-        //ddd($product);
+        //ddd($receiver);
         return view('orders.show', compact('order', 'product', 'arrival', 'departure', 'receiver'));
     }
 

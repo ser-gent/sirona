@@ -8,8 +8,8 @@
         <li class="list-group-item">Produit : {{ $product->name }}</li>
         <li class="list-group-item">Quantité : {{ $order->quantity }}</li>
         <li class="list-group-item">Lieu de stockage : {{ $departure->name }}</li>
-        <li class="list-group-item">Status : {{ $order->status }}</li>
-        <li class="list-group-item">Destinataire : {{ $receiver->name }}</li>
+        <li class="list-group-item">Statut : {{ $order->status }}</li>
+        <li class="list-group-item">Destinataire : {{ $receiver->firstname }} {{ $receiver->lastname }}</li>
         <li class="list-group-item">Lieu de réception : {{ $arrival->name }}</li>
         <li class="list-group-item">Arrivée désirée : {{ $order->arrival_time }}</li>
     </ul>
