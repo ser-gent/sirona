@@ -23,13 +23,21 @@
             <input type="text" class="form-control" id="height" name="height">
         </div>
 
-        <div class="col-md-6 mt-2">
+        <div class="col-md-4 mt-2">
             <label for="weight" class="form-label">Poids (en g)</label>
             <input type="text" class="form-control" id="weight" name="weight">
         </div>
-        <div class="col-md-6 mt-2">
+        <div class="col-md-4 mt-2">
             <label for="stock" class="form-label">Unité en stock</label>
             <input type="text" class="form-control" id="stock" name="stock">
+        </div>
+        <div class="col-md-4 mt-2">
+            <label for="location" class="form-label">Lieu de stockage du stock</label>
+            <select class="form-select" id="location" name="location">
+                @foreach($locations as $location)
+                    <option value="{{ $location->id }}">{{ $location->name }}</option>
+                @endforeach
+            </select>
         </div>
 
         <div class="col-12 mt-4">

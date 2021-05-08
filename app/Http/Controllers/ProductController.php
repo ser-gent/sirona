@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\ProductRequest;
+use App\Models\DeliveryPoint;
 use App\Models\Product;
 use Exception;
 use Illuminate\Http\RedirectResponse;
@@ -21,7 +22,8 @@ class ProductController extends Controller
 
     public function create()
     {
-        return view('products.create');
+        $locations = DeliveryPoint::all();
+        return view('products.create', compact('locations'));
     }
 
 
