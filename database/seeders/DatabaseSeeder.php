@@ -20,6 +20,6 @@ class DatabaseSeeder extends Seeder
         User::factory(10)->create();
         Robot::factory(4)->create();
         DeliveryPoint::factory(16)->create();
-        Product::factory(69)->create();
+        Product::factory(20)->create();
     }
 }

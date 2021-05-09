@@ -23,7 +23,7 @@ class ProductFactory extends Factory
     public function definition(): array
     {
         return [
-            'name' => $this->faker->word,
+            'name' => $this->faker->unique()->word,
             'length' => $this->faker->randomFloat($nbMaxDecimals = 2, $min = 0.15, $max = 20.00),
             'width' => $this->faker->randomFloat($nbMaxDecimals = 2, $min = 0.15, $max = 20.00),
             'height' => $this->faker->randomFloat($nbMaxDecimals = 2, $min = 0.15, $max = 20.00),

@@ -36,6 +36,10 @@ class OrderController extends Controller
             'arrival_time' => 'required|regex:/[0-9]{2}:[0-9]{2}/',
         ]);
 
+        $product = Product::find($request->input('product'));
+        $product->stock -= intval($request->input('quantity'));
+        $product->save();
+
         $now = Carbon::now('Europe/Paris');
         $time = $request->input('arrival_time');
         $date = Carbon::create($now->year,
