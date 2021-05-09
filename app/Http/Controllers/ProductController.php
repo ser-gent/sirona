@@ -47,7 +47,8 @@ class ProductController extends Controller
     {
         //$product = Product::findOrFail($product);
         $product = Product::find($id);
-        return view('products.edit', compact('product'));
+        $locations = DeliveryPoint::all();
+        return view('products.edit', compact('product', 'locations'));
     }
 
 
