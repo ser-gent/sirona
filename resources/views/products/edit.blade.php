@@ -3,7 +3,7 @@
 @section('content')
     <h1>Edition de {{ $product->name }}</h1>
     <hr>
-    <form action="{{ route('product.store') }}" method="POST" class="row">
+    <form action="{{ route('product.update') }}" method="POST" class="row">
         @csrf
         <div class="col-12">
             <label for="name" class="form-label">Désignation</label>
@@ -11,7 +11,7 @@
         </div>
 
         <div class="col-md-4 mt-2">
-            <label for="length" class="form-label">Longeur (en cm)</label>
+            <label for="length" class="form-label">Longueur (en cm)</label>
             <input type="text" class="form-control" id="length" name="length" value="{{ $product->length }}">
         </div>
         <div class="col-md-4 mt-2">

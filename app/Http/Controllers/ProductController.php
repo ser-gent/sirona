@@ -52,12 +52,13 @@ class ProductController extends Controller
     }
 
 
-    public function update(ProductRequest $request, Product $product): RedirectResponse
+    //public function update(ProductRequest $request, Product $product): RedirectResponse
+    public function update(int $id): RedirectResponse
     {
-        $product = Product::findOrFail($product);
+        $product = Product::findOrFail($id);
         $product->update($request->all());
         return redirect()->route('product.index')
-            ->with('success', 'La modifiaction a été enregistré');
+            ->with('success', 'La modification a été enregistré');
     }
 
 

@@ -21,7 +21,7 @@
                     <td class="fst-italic">{{ $product->length }} x {{ $product->width }} x {{ $product->height }} cm</td>
                     <td>{{ $product->weight}} g</td>
                     <td>
-                        @include('products._btn-edit-delete')
+{{--                        @include('products._btn-edit-delete')--}}
                     </td>
                 </tr>
             @endforeach
