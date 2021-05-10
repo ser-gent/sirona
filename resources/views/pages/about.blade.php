@@ -25,8 +25,8 @@
             </h2>
             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionAbout">
                 <div class="accordion-body">
-                    Cette plateforme est un <i>proof of concept</i> d'un système permettant de gérer la flotte de robot du système Sirona.
-                    Cette application web permet de commander des produits/matériels présents dans le stock de l'hopital et de réaliser l'acheminement dans un temps record vers le département concerné.
+                    Cette plateforme est un <i>proof of concept</i> d'un système permettant de gérer la flotte de robots du système Sirona.
+                    Cette application web permet de commander des produits/matériels présents dans le stock de l'hôpital et de réaliser l'acheminement dans un temps record vers le département concerné.
                 </div>
             </div>
         </div>
@@ -49,7 +49,7 @@
         <div class="accordion-item">
             <h2 class="accordion-header" id="headingFour">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                    Comment se connecter à Sirona
+                    Comment se connecter à Sirona ?
                 </button>
             </h2>
             <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headiFour" data-bs-parent="#accordionAbout">
